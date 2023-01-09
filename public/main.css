@@ -1,0 +1,232 @@
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/style.less ***!
+  \*********************************************************************************************************/
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  width: calc((100% - 14px) / 7);
+  height: 60px;
+  border: 1px solid #fff;
+}
+.day.active {
+  background: #ddd;
+  border: 1px solid #ddd;
+}
+.day.today {
+  border: 1px solid #ddd;
+}
+.day.select {
+  border: 1px solid #6c90c7;
+}
+.dayName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+  width: calc(100% / 7);
+  height: 60px;
+}
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+}
+.month-name {
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+  background: #6c90c7;
+  color: #fff;
+  position: relative;
+}
+.month-name-button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: none;
+  border: none;
+}
+.month-name-button.prew {
+  top: 15px;
+  left: 15px;
+}
+.month-name-button.prew:before {
+  content: "<";
+  color: #fff;
+  font-size: 20px;
+}
+.month-name-button.next {
+  top: 15px;
+  right: 15px;
+}
+.month-name-button.next:before {
+  content: ">";
+  color: #fff;
+  font-size: 20px;
+}
+.tasks-title {
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+  background: #ddd;
+}
+.task-empty {
+  text-align: center;
+  padding: 15px;
+}
+.task-one {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-between;
+}
+.task-one.close {
+  text-decoration: line-through;
+}
+.task-one.priority {
+  background: #fff294;
+}
+.task-one label {
+  margin-right: 10px;
+  width: calc(100% - 30px);
+  display: flex;
+  align-items: center;
+}
+.task-one button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  position: relative;
+  background: none;
+}
+.task-one label {
+  margin-right: 10px;
+  width: calc(100% - 30px);
+  display: flex;
+  align-items: center;
+}
+.task-one button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  position: relative;
+  background: none;
+}
+.task-one button:before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 11px;
+  left: 3px;
+  transform: rotate(-45deg);
+}
+.task-one button:after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 11px;
+  left: 3px;
+  transform: rotate(45deg);
+}
+.task-one button input {
+  margin: 0;
+  margin-right: 10px;
+}
+.new-task-form {
+  padding: 15px;
+}
+.new-task-form button {
+  width: 100%;
+  height: 40px;
+  background: #6c90c7;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+}
+.new-task-form button:disabled {
+  background: #ddd;
+  color: #000;
+}
+.form-input input {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+.form-input label {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+.form-input input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-right: 10px;
+}
+.form-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.form-body {
+  width: 100%;
+  background: #fff;
+  padding: 15px;
+  position: relative;
+}
+.form-body h2 {
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+.form-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+}
+.form-close:before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  transform: rotate(-45deg);
+}
+.form-close:after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  transform: rotate(45deg);
+}
+
